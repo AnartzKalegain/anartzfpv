@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; script-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; style-src 'self' https://fonts.googleapis.com;" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; script-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;">
     <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
@@ -27,6 +27,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed&family=Bai+Jamjuree&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <script>
       // Añadir clase 'js' al <html> si JavaScript esta habilitado
       document.documentElement.classList.add('js');
@@ -42,6 +43,50 @@
     <link href="https://anartzfpv.com" rel="canonical" />
   </head>
   <body>
-  
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="navbar-left">
+        <a href="#">
+          <img src="AnartzFPV.png" alt="Logo AnartzFPV" class="logo">
+          <span class="brand">AnartzFPV</span>
+        </a>
+        <nav class="menu">
+          <ul>
+            <li class="dropdown">
+              <a href="#demos">Proyectos</a>
+              <!-- <ul class="dropdown-menu">
+                <li><a href="#">Aerial shots</a></li>
+                <li><a href="#">FPV Racing</a></li>
+              </ul> -->
+            </li>
+            <li>
+              <a href="#about-me">Sobre mí</a>
+            </li>
+            <li>
+              <a href="#testimonios">Testimonios</a>
+            </li>
+            <li>
+              <a href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="navbar-right">
+        <a href="#contacto" class="btn btn-focus">Reservar grabación</a>
+      </div>
+    </header>
+
+    <!-- HEADER -->
+    <section class="hero">
+      <div class="header">
+        <h1>Fly beyond the ordinary</h1>
+        <h2>Captura tu historia desde el aire</h2>
+      </div>
+      <div class="hero-buttons">
+        <a href="#demos" class="btn btn-focus">Ver demos</a>
+        <a href="#contacto" class="btn">Contactar</a>
+      </div>
+    </section>
+    
   </body>
 </html>
