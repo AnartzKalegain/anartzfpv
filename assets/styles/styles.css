@@ -294,7 +294,21 @@ body {
   width: 30%;
 }
 
-.demos {
+.works {
   height: 1000px;
   background-color: var(--color-bg-secondary);
+}
+
+@media (max-width: 840px) {
+  .hero {
+  padding: 2rem 2rem;
+}
+
+  .hero h1 {
+    font-size: 3.65rem;
+  }
+
+  .hero h2 {
+  font-size: 1.5rem;
+}
 }
