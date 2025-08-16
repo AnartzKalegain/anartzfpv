@@ -61,6 +61,7 @@ body {
   text-align: center;
   padding: 1.5rem;
   background-color: var(--color-bg);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .menu-mobile ul {
@@ -153,8 +154,18 @@ body {
 /* Responsive */
 @media (max-width: 840px) {
   .navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: var(--color-bg);
     flex-wrap: wrap;
     padding: 1rem 2rem;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .navbar.shadow {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+
   }
 
   .navbar-left {
@@ -167,8 +178,15 @@ body {
   }
 
   .menu-mobile {
+    position: fixed;
+    top: 60px;
+    left: -15px;
     width: 100%;
     order: 4;
+  }
+
+  .hero {
+    margin-top: 60px;
   }
 
   .navbar-right {
