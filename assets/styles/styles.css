@@ -24,6 +24,11 @@ body {
   padding: 1rem 4rem;
   max-width: 1300px;
   margin: 0 auto;
+  z-index: 999;
+}
+
+.navbar * {
+  z-index: 999;
 }
 
 .navbar-left {
@@ -50,7 +55,21 @@ body {
   font-weight: 600;
 }
 
-.menu ul {
+.menu-mobile {
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--color-bg);
+}
+
+.menu-mobile ul {
+  flex-direction: column;
+  gap: 1.5rem !important;
+}
+
+.menu ul,
+.menu-mobile ul {
   display: flex;
   gap: 0.25rem;
   list-style: none;
@@ -58,7 +77,8 @@ body {
   padding: 0;
 }
 
-.menu a {
+.menu a,
+.menu-mobile a {
   text-decoration: none;
   color: inherit;
   padding: 0.5rem 1rem;
@@ -74,7 +94,8 @@ body {
   -o-transition: background-color 0.3s ease;
 }
 
-.menu a:hover {
+.menu a:hover,
+.menu-mobile a:hover {
   background-color: rgba(90, 193, 255, 0.2);;
 }
 
@@ -117,6 +138,50 @@ body {
 
 .btn-focus:hover {
   box-shadow: 7px 7px 0 var(--color-accent);
+}
+
+/* Ocultar el botón en escritorio */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-principal);
+}
+
+/* Responsive */
+@media (max-width: 840px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+  }
+
+  .navbar-left {
+    order: 1;
+  }
+
+  .menu-toggle {
+    display: block; /* Visible en móvil */
+    order: 3;
+  }
+
+  .menu-mobile {
+    width: 100%;
+    order: 4;
+  }
+
+  .navbar-right {
+    display: none;
+  }
+
+  .menu ul {
+    display: none; /* Oculto */
+  }
+
+  .menu-mobile.show {
+    display: flex; /* Mostrar cuando se activa */
+  }
 }
 
 /* HERO */
