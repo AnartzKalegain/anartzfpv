@@ -514,3 +514,16 @@ body {
 .about-me {
   height: 100vh;
 }
+
+@media (max-width: 840px) {
+  .works {
+    padding: 2rem 0rem 2rem 2rem;
+  }
+  .text-block h2 {
+    font-size: 1.75rem;
+  }
+  .text-block p {
+    line-height: 1.6em;
+    font-size: 1rem;
+  }
+}
