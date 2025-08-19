@@ -517,7 +517,7 @@ body {
 
 @media (max-width: 840px) {
   .works {
-    padding: 2rem 0rem 2rem 2rem;
+    padding: 2rem;
   }
 
   .text-block {
@@ -534,19 +534,24 @@ body {
   }
 
   .video-block {
-    margin: auto auto auto 1em;
+    margin: auto auto auto auto;
   }
 }
 
 @media (max-width: 650px) {
   .grid-container {
-    grid-template-columns: 1fr; /* solo 1 columna */
-    grid-template-rows: auto auto auto; /* tres filas */
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 2rem;
   }
 
   .video-block:nth-child(2),
   .video-block:nth-child(3) {
     grid-column: 1 / 2;
     grid-row: auto;
+  }
+
+  .text-block h2 {
+    text-align: center;
   }
 }
