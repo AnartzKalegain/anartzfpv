@@ -657,7 +657,7 @@ body {
 }
 
 /*CONTACT*/
-.about-me {
+.contact {
   width: 100%;
   height: 90vh;
   padding: 6rem 4rem 6rem 4rem;
@@ -666,3 +666,27 @@ body {
 
 
 /*FOOTER*/
+.footer {
+  background-color: var(--color-principal);
+  height: 90vh;
+  padding: 4rem 0rem 4rem 0rem;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 0.5rem 0 0.5rem;
+  margin: 0 auto 0 auto;
+  width: 100%;
+}
+
+.footer-bottom {
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.js-only {
+  display: none;
+}
