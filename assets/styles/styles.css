@@ -667,6 +667,7 @@ body {
 
 /*FOOTER*/
 .footer {
+  color: white;
   background-color: var(--color-principal);
   height: 90vh;
   padding: 4rem 0rem 4rem 0rem;
@@ -685,6 +686,10 @@ body {
   justify-content: space-between;
   align-items: center;
   display: flex;
+}
+
+.copyright {
+  color: #9999a5;
 }
 
 .js-only {
