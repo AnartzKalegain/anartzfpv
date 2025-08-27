@@ -577,6 +577,7 @@ body {
 .image-block img {
   width: 100%;
   max-width: 350px;
+  border: 0.15rem solid white;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
