@@ -667,7 +667,7 @@ body {
 .footer {
   color: white;
   background-color: var(--color-principal);
-  height: 90vh;
+  height: 40vh;
   padding: 4rem 0rem 4rem 0rem;
 }
 
