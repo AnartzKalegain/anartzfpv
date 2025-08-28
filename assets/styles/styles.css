@@ -625,13 +625,11 @@ body {
   gap: 0.5rem;
 }
 
-.info-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+@media (max-width: 1100px) {
+  .button-group {
+    flex-direction: column;
+  }
 }
-
-
 
 @media (max-width: 840px) {
   .about-me {
@@ -653,6 +651,10 @@ body {
 }
 
 @media (max-width: 650px) {
+  .button-group {
+    flex-direction: row;
+  }
+
   .about-me .grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -672,6 +674,12 @@ body {
   .about-me .text-block p {
     line-height: 1.6em;
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .button-group {
+    flex-direction: column;
   }
 }
 
