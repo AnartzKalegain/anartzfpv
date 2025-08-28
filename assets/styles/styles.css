@@ -622,6 +622,12 @@ body {
   text-decoration: none;
 }
 
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 @media (max-width: 840px) {
   .about-me {
     padding: 4rem 2rem 4rem 2rem;
