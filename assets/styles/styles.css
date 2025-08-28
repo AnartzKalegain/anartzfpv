@@ -620,6 +620,9 @@ body {
 
 .info-item a {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .info-item {
@@ -627,6 +630,8 @@ body {
   align-items: center;
   gap: 0.5rem;
 }
+
+
 
 @media (max-width: 840px) {
   .about-me {
