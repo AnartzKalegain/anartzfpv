@@ -604,6 +604,24 @@ body {
   margin: 0.35rem;
 }
 
+.button-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-group * {
+  color: black;
+}
+
+.button-group i {
+  color: var(--color-accent);
+}
+
+.info-item a {
+  text-decoration: none;
+}
+
 @media (max-width: 840px) {
   .about-me {
     padding: 4rem 2rem 4rem 2rem;
